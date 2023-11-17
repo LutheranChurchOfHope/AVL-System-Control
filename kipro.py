@@ -6,7 +6,7 @@
 # modify number following 'value' to the number which corresponds to the desired transport function
 # ingesting the 2 separate arguments allows this code to control mutliple kipro devices
 # for more information you can type "http://[kipro_IP ADDRESS]/descriptors" and you will find a full list of the URL commands
-# example to call control: "./kipro.py 1 record"
+# example to ask kipro 1 to record: "./kipro.py 1 record"
 
 import urllib.request as urllib2
 import time
