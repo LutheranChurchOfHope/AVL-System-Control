@@ -2,6 +2,7 @@
 
 # python code for controlling synaccess NP-02B 2 outlet power switch
 # in order for the controls to execute, we must receive the returned data on port 2048
+# it is helpful to use time.sleep in between commands
 # to use this code, call the program and call the desired result from an argument
 # example: ./synaccess_np-02b.py oneON will send a command to turn port 1 on
 
