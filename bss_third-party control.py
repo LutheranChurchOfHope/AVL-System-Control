@@ -46,7 +46,6 @@ if cmd == 'controlthis':
 	s.close()
 
 elif cmd == 'controlthat':
-  elif cmd == 'hallmute':
 	log('controlled that')
 	s.connect((TCP, TCP_PORT))
 	s.send(specified_control3)
