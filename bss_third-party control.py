@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 
 # use this code sample to run bss third party control from python3 on a linux server
+# a cron job can recall bss controls by calling this code, followed by the argument statement
+# example cron line: [00 02 * * * (path-to)/bss_third-party control.py controlthis]
 
 import sys
 import socket
