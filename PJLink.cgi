@@ -42,7 +42,7 @@ elif cmd == 'PJoff':
 	print(ack)
 	s.sendall(data.encode())
 	msg = s.recv(4352)
-  print(msg)
+  	print(msg)
 	s.close()
 
 else:
