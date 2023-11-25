@@ -29,8 +29,8 @@ if cmd == 'PJon':
 	ack = s.recv(4352)
 	print(ack)
 	s.sendall(data.encode())
-  msg = s.recv(4352)
-  print(msg)
+ 	msg = s.recv(4352)
+	print(msg)
 	s.close()
 
 elif cmd == 'PJoff':
