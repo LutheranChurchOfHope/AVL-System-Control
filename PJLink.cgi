@@ -13,6 +13,7 @@ cgitb.enable()
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 HOST = '[Projector IP Address]'
+PORT = 4352
 
 cmd = sys.argv[1]
 
