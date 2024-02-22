@@ -19,7 +19,7 @@ sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 PORT = 9761
 lgTVON = 'ka 00 01'
-lgTVOFF = 'ka 00 00
+lgTVOFF = 'ka 00 00'
 
 if cmd == 'lgtvON':
 	send_magic_packet('[Specified TV's MAC Adreess]')
