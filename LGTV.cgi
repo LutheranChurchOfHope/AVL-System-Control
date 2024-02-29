@@ -5,6 +5,7 @@
 
 # for newer than 2018 models that require keycodes, look up Wes Souza in github, there is a working
 # json library for the AES-128 encryption required for newer than 2018 model LG TVs
+# with npm installed, sudo npm i lgtv-ip-control-cli for the npm library with Command Line Interface
   
 import cgitb
 import urllib2
