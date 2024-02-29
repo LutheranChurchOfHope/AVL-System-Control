@@ -2,6 +2,9 @@
 # use this code for turning lg TV on or off
 # you will need to set up access on the LG TV, it needs to be a commercial series display
 # for this code to work, newer consumer displays require an encryption key for the commands
+
+# for newer than 2018 models that require keycodes, look up Wes Souza in github, there is a working
+# json library for the AES-128 encryption required for newer than 2018 model LG TVs
   
 import cgitb
 import urllib2
