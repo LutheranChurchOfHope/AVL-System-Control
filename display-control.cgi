@@ -50,7 +50,9 @@ def PJ(pj, port, command, loc):
 	return()
 
 # to execute commands from the ingested cgi argument, call the defined function and insert variables as needed (IP Address, Port#, command, location)
-# I added the location as a python object to print to the output for logging purposes, making troubleshooting a little easier.
+# I added the location as a python object to print to the output for logging purposes, making troubleshooting a little easier. To prevent huge power surges
+# we use a time.sleep command between each on command sent, so the inrush current does not overload any main breakers.  This feature is not required during
+# power off sequences.
 
 if cmd == "allon":
 	PJ(PJ1IP, PANA_PORT, PANA_PJON, 'room 1')
