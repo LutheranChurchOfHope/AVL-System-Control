@@ -15,7 +15,9 @@ import sys
 print ("content-Type: text/html")
 print ("")
 
-PJIP = '192.168.0.10'
+# identify all your devices IP addresses as individual variables
+PJ1IP = '192.168.0.10'
+PJ2IP = '192.168.0.11'
 
 # a few basic models of projectors, TV's, and their command structures
 
@@ -49,13 +51,14 @@ def PJ(pj, port, command, loc):
 	return()
 
 # to execute commands from the ingested cgi argument, call the defined function and insert variables as needed (IP Address, Port#, command, location)
-# I added the location as a variable for logging purposes, making troubleshooting a little easier.
+# I added the location as a python object to print to the output for logging purposes, making troubleshooting a little easier.
 
-if cmd == "on":
-  PJ(PJIP, PANA_PORT, PANA_PJON, 'somewhere')
+if cmd == "allon":
+	PJ(PJ1IP, PANA_PORT, PANA_PJON, 'room 1')
+	PJ(PJ2IP, BARCO_PORT, BARCO_PJON, 'room 2')
 
-elif cmd == "off":
-  PJ(PJIP, PANA_PORT, PANA_PJOFF, 'somewhere')
-
+elif cmd == "alloff":
+	PJ(PJ1IP, PANA_PORT, PANA_PJOFF, 'room 1')
+	PJ(PJ2IP, BARCO_PORT, BARCO_PJOFF, 'room 2')
 else:
   print('no match for command')
