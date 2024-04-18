@@ -63,4 +63,4 @@ elif cmd == "alloff":
 	PJ(PJ1IP, PANA_PORT, PANA_PJOFF, 'room 1')
 	PJ(PJ2IP, BARCO_PORT, BARCO_PJOFF, 'room 2')
 else:
-  print('no match for command')
+	print('no match for command')
