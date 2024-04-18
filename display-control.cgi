@@ -42,7 +42,7 @@ cmd = sys.argv[1]
 # give it a time.sleep after the incoming message is received, and re-send the power off command.
 def PJ(ip, port, command, loc):
 	try:
-		s = socket.socket(socket.AF_INET, soket.SOCK_STREAM)
+		s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 		s.settimeout(2)
 		s.connect((ip, port))
 		s.sendall(command)
