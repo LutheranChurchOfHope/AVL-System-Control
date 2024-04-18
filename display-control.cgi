@@ -5,7 +5,6 @@
 # all by populating variables.  .cgi stuff called for using with web control.
 
 import cgitb
-import urllib.request as urllib2
 import time
 import datetime
 cgitb.enable()
@@ -55,6 +54,7 @@ def PJ(pj, port, command, loc):
 
 if cmd == "allon":
 	PJ(PJ1IP, PANA_PORT, PANA_PJON, 'room 1')
+	time.sleep(1)
 	PJ(PJ2IP, BARCO_PORT, BARCO_PJON, 'room 2')
 
 elif cmd == "alloff":
