@@ -14,7 +14,7 @@ s = socket.socket(socket.AV_INET, socket.SOCK_STREAM)
 
 #in my testing using netcat it appears that the MRX7D would only receive and respond to commands after devmode normal request is first sent
 
-devstatus = b'devmode normal\n'
+devstatus = b'devstatus runmode\n'
 sampleoff = b'set MTX:Index_1 0 0 \"OFF\"\n'
 
 s.connect((TCP, TCP_PORT))
