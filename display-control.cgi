@@ -40,6 +40,10 @@ cmd = sys.argv[1]
 # this is the subroutine for the IP connection and data send
 # some panasonic projectors require two off commands to be sent, in that case we copy/paste this function with a new name, 
 # give it a time.sleep after the incoming message is received, and re-send the power off command.
+# Of note is that panasonic projectors will not respond until after the control server script has indicated a TCP reception of the returned message.
+# because of that, even if you throw away the data, it's good practice to use a [socket.recv(port)] line in the code to receive the information
+# returned from the desired device controlled.
+
 def PJ(ip, port, command, loc):
 	try:
 		s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
