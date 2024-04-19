@@ -10,7 +10,7 @@ import socket
 TCP = '192.168.0.1'
 TCP_PORT = 49280
 
-s = socket.socket(socket.AV_INET, socket.SOCK_STREAM)
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 #in my testing using netcat it appears that the MRX7D would only receive and respond to commands after devmode normal request is first sent
 
