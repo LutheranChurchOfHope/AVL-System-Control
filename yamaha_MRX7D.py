@@ -4,6 +4,7 @@
 #please see Yamaha white paper for specific information, this is only a basic code example for correct syntax
 #you must first create under 'tools/remote control setup list' individual ID numbers for items you want to control
 #the number immediately following "Index" below is the ID number of the item controlled, in this example it is a mute switch
+#The complete manual can be found at: https://usa.yamaha.com/files/download/other_assets/1/1144121/mtx_mrx_xmv_ex_remote_control_protocol_spec_v310_en.pdf
 
 import sys
 import socket
