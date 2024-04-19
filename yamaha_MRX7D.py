@@ -18,6 +18,7 @@ s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 devstatus = b'devstatus runmode\n'
 samplemuteoff = b'set MTX:Index_1 0 0 \"OFF\"\n'
+# in the case that the first item in the "remote control setup list" is a preset recall, use this syntax:
 samplepreset1recall = b'ssrecall_ex list 1\n'
 
 s.connect((TCP, TCP_PORT))
