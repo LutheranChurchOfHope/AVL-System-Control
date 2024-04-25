@@ -14,7 +14,7 @@ TCP_PORT = 49280
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-#in my testing using netcat it appears that the MRX7D would only receive and respond to commands after devmode normal request is first sent
+#The MRX7D will only receive and respond to commands after devstatus runmode request is sent
 
 devstatus = b'devstatus runmode\n'
 samplemuteoff = b'set MTX:Index_1 0 0 \"OFF\"\n'
